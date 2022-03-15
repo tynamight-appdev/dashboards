@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Target Dashboards</title>
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="bTxrGcI0tn/c0rzLkXtL/+pnxRMljkKQdEGZHcOjFqZ+e9xZ3bOBIQqj86pSgfhKwy+uUXekUjx9iZj0Z1XMLA==" />
+
+    <!-- Expand the number of characters we can use in the document beyond basic ASCII 🎉 -->
+    <meta charset="utf-8">
+
+    <!-- Make it responsive to small screens -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+
+    <link rel="stylesheet" media="all" href="/assets/application-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" />
+  </head>
+
+  <body>
+    <h1>Convert <%= @from_symbol %> to <%= @to_symbol %></h1>
+
+<p>1 <%= @from_symbol %> equals <%= @rate %> <%= @to_symbol %>.</p>
+
+<p>Go <a href="/forex/<%= @from_symbol %>">back</a>.</p>
+
+  </body>
+</html>

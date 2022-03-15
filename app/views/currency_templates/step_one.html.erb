@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dashboards</title>
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="6SqZ+e6k4ANgADpWCeQUn3C9a0Znlye6GLd30nz0nzP6bS658SPXXbZxdTfKHqcqWfUABDW9NxYRf3Y72AJFuQ==" />
+
+    <!-- Expand the number of characters we can use in the document beyond basic ASCII 🎉 -->
+    <meta charset="utf-8">
+
+    <!-- Make it responsive to small screens -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+
+    <link rel="stylesheet" media="all" href="/assets/application-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" />
+  </head>
+
+  <body>
+    <h1>Currency pairs</h1>
+
+<p>Go <a href="/">back</a>.</p>
+
+<ul>
+<% @array_of_symbols.each do |a_symbol| %>
+    <li>
+      <a href="/forex/<%= a_symbol %>">
+        Convert 1 <%= a_symbol %> to...
+      </a>
+    </li>
+<% end %>    
+</ul>
+
+  </body>
+</html>
